@@ -26,6 +26,11 @@
             class="gef.View"
             id="GEFTutorial.view">
       </view>
+      <view
+            class="gef.View2"
+            id="GEFTutorial.view2"
+            name="View2">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.perspectiveExtensions">
@@ -36,7 +41,7 @@
                minimized="false"
                relative="org.eclipse.ui.editorss"
                relationship="left"
-               id="GEFTutorial.view">
+               id="GEFTutorial.view2">
          </view>
       </perspectiveExtension>
    </extension>
