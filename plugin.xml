@@ -27,7 +27,7 @@
             id="GEFTutorial.view">
       </view>
       <view
-            class="gef.View2"
+            class="gef.View"
             id="GEFTutorial.view2"
             name="View2">
       </view>

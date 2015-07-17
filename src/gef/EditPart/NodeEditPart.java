@@ -17,11 +17,9 @@ import org.eclipse.swt.graphics.Color;
 
 public class NodeEditPart extends AbstractGraphicalEditPart {
 
-	/** The figure's anchor. */
 	private ChopboxAnchor m_anchor;
 
 	protected IFigure createFigure() {
-		// 단순하게 figure를 build한다.
 		System.out.println("NodeEditPart on createFigure()");
 		IFigure rectangle = new RectangleFigure();
 		rectangle.setBackgroundColor(new Color(null, 200, 200, 200));
@@ -34,10 +32,7 @@ public class NodeEditPart extends AbstractGraphicalEditPart {
 	}
 
 	protected void refreshVisuals() {
-		// 뷰에서 모델의 상태(속성)를 반영(reflect)한다.
 		NodeModel node = (NodeModel) getModel();
-		// This is where the actual drawing is done,
-		// Simply a rectangle with text
 		
 		Rectangle bounds = new Rectangle(50, 50, 50, 50);
 		getFigure().setBounds(bounds);
